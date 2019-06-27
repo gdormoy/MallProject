@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mall", "Mall.csproj", "{061A8F31-10E0-4E29-9855-1525384BBFDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{061A8F31-10E0-4E29-9855-1525384BBFDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{061A8F31-10E0-4E29-9855-1525384BBFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{061A8F31-10E0-4E29-9855-1525384BBFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{061A8F31-10E0-4E29-9855-1525384BBFDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
