@@ -11,5 +11,10 @@ namespace CarDealer
         protected abstract double CalculateVal();
 
         protected abstract double CalculatePreTaxAmount();
+
+        public double getPrice()
+        {
+            return CalculateVal() + CalculatePreTaxAmount();
+        }
     }
 }

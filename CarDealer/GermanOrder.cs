@@ -2,18 +2,18 @@
 
 namespace CarDealer
 {
-    public class LuxembourgishOrder : BaseOrder
+    public class GermanOrder : BaseOrder
     {
         private double preTaxServiceAmount;
         private double preTaxMaterialAmount;
 
-        public LuxembourgishOrder(double preTaxServiceAmount, double preTaxMaterialAmount){
+        public GermanOrder(double preTaxServiceAmount, double preTaxMaterialAmount){
             this.preTaxServiceAmount = preTaxServiceAmount;
             this.preTaxMaterialAmount = preTaxMaterialAmount;
         }
 
         protected override double CalculateVal(){
-            return preTaxServiceAmount * 0.12 +
+            return preTaxServiceAmount +
             preTaxMaterialAmount * 0.15;
         }
 
