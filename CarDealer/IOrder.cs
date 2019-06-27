@@ -1,4 +1,4 @@
-﻿namespace CarDealer
+﻿namespace Mall
 {
     public interface IOrder
     {

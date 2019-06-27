@@ -1,4 +1,4 @@
-namespace BurgerKing
+namespace Mall
 {
     public class Moutarde : Decorator
     {

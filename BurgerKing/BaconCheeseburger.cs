@@ -1,4 +1,4 @@
-namespace BurgerKing
+namespace Mall
 {
     public class BaconCheeseburger : BurgersComponent
     {

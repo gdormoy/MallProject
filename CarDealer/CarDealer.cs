@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Mall;
 
-namespace CarDealer
+namespace Mall
 {
     public class CarDealer : Shop
     {

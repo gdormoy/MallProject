@@ -2,7 +2,7 @@ using System;
 using Mall;
 using System.Collections.Generic;
 
-namespace BurgerKing
+namespace Mall
 {
     public class BurgerKing : Shop
     {
@@ -17,9 +17,9 @@ namespace BurgerKing
         public void setBurger()
         {
             Console.WriteLine("Choisit ton burger:");
-            Console.WriteLine("1 - Little Cheesburger, prix: 7€");
-            Console.WriteLine("2 - Cheesburger, prix: 10€");
-            Console.WriteLine("3 - Bacon Cheesburger, prix: 11€");
+            Console.WriteLine("1 - Little Cheesburger, prix: 7 eruo");
+            Console.WriteLine("2 - Cheesburger, prix: 10 euro");
+            Console.WriteLine("3 - Bacon Cheesburger, prix: 11 euro");
             choice = Console.ReadLine();
             
             switch (choice)
@@ -48,21 +48,21 @@ namespace BurgerKing
             do
             {
                 Console.WriteLine("Ajouter des ingredient ?");
-                Console.WriteLine("1 - Champignons Grillés, prix: 1€");
-                Console.WriteLine("2 - Cornichon, prix: 1€");
-                Console.WriteLine("3 - Jalapenos, prix: 1€");
-                Console.WriteLine("4 - Jalapenos Grillés, prix: 1€");
-                Console.WriteLine("5 - Oignons, prix: 1€");
-                Console.WriteLine("6 - Oignons Grillés, prix: 1€");
-                Console.WriteLine("7 - Poivron vert, prix: 1€");
-                Console.WriteLine("8 - Salade, prix: 1€");
-                Console.WriteLine("9 - Tomate, prix: 1€");
-                Console.WriteLine("10 - Ketchup, prix: 1€");
-                Console.WriteLine("11 - Mayonnaise, prix: 1€");
-                Console.WriteLine("12 - Moutard, prix: 1€");
-                Console.WriteLine("13 - Sauce BBQ, prix: 1€");
-                Console.WriteLine("14 - Sauce Piquante, prix: 1€");
-                Console.WriteLine("15 - Sauce Steak, prix: 1€");
+                Console.WriteLine("1 - Champignons Grillés, prix: 1 euro");
+                Console.WriteLine("2 - Cornichon, prix: 1 euro");
+                Console.WriteLine("3 - Jalapenos, prix: 1 euro");
+                Console.WriteLine("4 - Jalapenos Grillés, prix: 1 euro");
+                Console.WriteLine("5 - Oignons, prix: 1 euro");
+                Console.WriteLine("6 - Oignons Grillés, prix: 1 euro");
+                Console.WriteLine("7 - Poivron vert, prix: 1 euro");
+                Console.WriteLine("8 - Salade, prix: 1 euro");
+                Console.WriteLine("9 - Tomate, prix: 1 euro");
+                Console.WriteLine("10 - Ketchup, prix: 1 euro");
+                Console.WriteLine("11 - Mayonnaise, prix: 1 euro");
+                Console.WriteLine("12 - Moutard, prix: 1 euro");
+                Console.WriteLine("13 - Sauce BBQ, prix: 1 euro");
+                Console.WriteLine("14 - Sauce Piquante, prix: 1 euro");
+                Console.WriteLine("15 - Sauce Steak, prix: 1 euro");
                 choice = Console.ReadLine();
 
                 switch (choice)

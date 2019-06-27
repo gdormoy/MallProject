@@ -1,6 +1,6 @@
 using System;
  
- namespace CarDealer
+ namespace Mall
  {
      public class OrderComptant : Order
      {
