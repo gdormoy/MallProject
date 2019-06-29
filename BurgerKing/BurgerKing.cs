@@ -63,6 +63,7 @@ namespace Mall
                 Console.WriteLine("13 - Sauce BBQ, prix: 1 euro");
                 Console.WriteLine("14 - Sauce Piquante, prix: 1 euro");
                 Console.WriteLine("15 - Sauce Steak, prix: 1 euro");
+                Console.WriteLine("N'indiquez rien pour valider votre commande.");
                 choice = Console.ReadLine();
 
                 switch (choice)
@@ -132,6 +133,7 @@ namespace Mall
             burgernameSize = baseBurger.GetName().Length + 2;
             Console.WriteLine(finalBurger.GetName().Substring(burgernameSize));
             Console.WriteLine("pour un total de:" + finalBurger.GetPrice());
+            Client.Client.GetInstance().DeductMoney(finalBurger.GetPrice());
         }
     }
 }
