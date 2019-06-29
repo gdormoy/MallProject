@@ -1,3 +1,5 @@
+using System;
+
 namespace Mall
 {
     public class Program
@@ -6,6 +8,7 @@ namespace Mall
         {
             // Display the number of command line arguments:
             System.Console.WriteLine("hello world");
+            Console.WriteLine("Votre argent disponible : " + Client.Client.GetInstance().Money);
             
             Bigshop bigShop = new Bigshop("bigshop", 1000);
             BurgerKing burgerKing = new BurgerKing("burger King", 70);
