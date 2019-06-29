@@ -40,17 +40,17 @@ namespace Mall
             switch (type)
             {
                 case "1":
-                    this.baseOrder = new FrenchOrder(vehicles.ElementAt(Int32.Parse(choice)).Value);
+                    this.baseOrder = new FrenchOrder(vehicles.ElementAt(Int32.Parse(choice) - 1).Value);
                     break;
                 case "2":
-                    double calculateService = vehicles.ElementAt(Int32.Parse(choice)).Value * 0.30;
-                    this.baseOrder = new GermanOrder(calculateService,vehicles.ElementAt(Int32.Parse(choice)).Value);
+                    double calculateService = vehicles.ElementAt(Int32.Parse(choice ) - 1).Value * 0.30;
+                    this.baseOrder = new GermanOrder(calculateService,vehicles.ElementAt(Int32.Parse(choice) - 1).Value);
                     break;
             }
             
             do
             {
-                Console.WriteLine("Votre commande est une "+ vehicles.ElementAt(Int32.Parse(choice)).Key + " pour: " + this.baseOrder.getPrice() + " euro, souhaitez vous payer ?");
+                Console.WriteLine("Votre commande est une "+ vehicles.ElementAt(Int32.Parse(choice) - 1).Key + " pour: " + this.baseOrder.getPrice() + " euro, souhaitez vous payer ?");
                 Console.WriteLine("1 - Comptant | 2 - A credit");
                 string payment = Console.ReadLine();
                 switch (payment)
@@ -90,7 +90,8 @@ namespace Mall
                 default:
                     break;
             }
-            Console.WriteLine("Au revoir!");
+            Console.WriteLine("Vous payez votre voiture : " + baseOrder.getPrice() + ". Au revoir !");
+            Client.Client.GetInstance().DeductMoney(baseOrder.getPrice());
         }
     }
 }
