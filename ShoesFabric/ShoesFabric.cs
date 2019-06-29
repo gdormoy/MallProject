@@ -10,6 +10,7 @@ namespace Mall
         
         public ShoesFabric(string name, float areaSize) : base(name, areaSize)
         {
+            ShoeCreator = new ShoeCreator();
         }
 
         public override void display()
@@ -63,6 +64,7 @@ namespace Mall
                 
                 Console.WriteLine("Merci d'avoir attendu");
                 Console.WriteLine("Vos " + shoe.getName() + " sont prête, merci de payer: " + price);
+                Client.Client.GetInstance().DeductMoney(price);
             }
 
         }
